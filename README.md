@@ -1,10 +1,10 @@
 # LeifESPBaseMQTT
 
-Helper functions to initialize LeifSimpleMQTT together with LeifESPBase to form a very fast booting and connecting mqtt-capable ESP8266 or ESP32-based device
+Helper functions to initialize [LeifSimpleMQTT](https://github.com/leifclaesson/LeifSimpleMQTT) together with [LeifESPBase](https://github.com/leifclaesson/LeifESPBase) to form a very fast booting and connecting mqtt-capable ESP8266 or ESP32-based device
 
 It is designed for use _by programmers_.
 
-For example, SSID, Key, host name, MQTT credentials are hardcoded and not settable from any user interface.
+For example, SSID, BSSID, Key, host name, MQTT credentials are hardcoded and not settable from any user interface.
 These and other things were *conscious design decisions* that reduce code complexity and resource requirements.
 
 It's designed to help in the construction of _purpose-built specialty devices_. It is _not_ designed to build user-configurable devices.
