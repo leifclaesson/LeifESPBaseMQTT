@@ -5,6 +5,8 @@
 
 LeifSimpleMQTT lsm;
 
+bool bLeifMqttSetupDefaults_DeferID=false;
+
 void LeifMqttSetupDefaults(bool bDebug)
 {
 
@@ -16,8 +18,11 @@ void LeifMqttSetupDefaults(bool bDebug)
 	}
 
 
-	lsm.strFriendlyName=GetHeadingText();
-	lsm.strID=MqttDeviceName(GetHostName());
+	if(!bLeifMqttSetupDefaults_DeferID)
+	{
+		lsm.strFriendlyName=GetHeadingText();
+		lsm.strID=MqttDeviceName(GetHostName());
+	}
 
 	lsm.strMqttServerIP=mqtt_server;
 	lsm.strMqttUserName=mqtt_user;
