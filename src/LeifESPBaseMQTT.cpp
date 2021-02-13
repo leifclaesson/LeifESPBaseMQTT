@@ -35,6 +35,9 @@ void LeifMqttSetupDefaults(bool bDebug)
 		lsm.Quit();
 		});
 
+	extern const uint32_t * pMqttUptime;
+	pMqttUptime=lsm.GetUptimeSecondsPtr_MQTT();
+
 
 }
 
