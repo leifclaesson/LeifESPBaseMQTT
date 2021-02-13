@@ -38,6 +38,11 @@ void LeifMqttSetupDefaults(bool bDebug)
 
 }
 
+void LeifEnableMQTT(bool bEnable)
+{
+	lsm.SetEnableMQTT(bEnable);
+}
+
 /*
 void LeifPublishMQTT(const char* topic, const char* payload, bool retain)
 {
