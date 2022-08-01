@@ -49,6 +49,12 @@ void LeifEnableMQTT(bool bEnable)
 	lsm.SetEnableMQTT(bEnable);
 }
 
+MqttSubscription * NewSubscription(const String & strTopic)
+{
+	return lsm.NewSubscription(strTopic);
+}
+
+
 /*
 void LeifPublishMQTT(const char* topic, const char* payload, bool retain)
 {
